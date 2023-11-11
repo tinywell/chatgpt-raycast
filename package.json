@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "chatgpt",
-  "title": "ChatGPT",
-  "description": "Interact with OpenAI's ChatGPT API directly from your command bar",
+  "name": "chatgptiny",
+  "title": "ChatGPTX",
+  "description": "Interact with OpenAI's ChatGPT API directly from your command bar,support custom API",
   "icon": "icon.png",
   "author": "abielzulio",
   "contributors": [
@@ -65,6 +65,24 @@
       "type": "password",
       "title": "API",
       "required": true
+    },
+    {
+      "name": "useBaseAPI",
+      "label": "Use Base API",
+      "description": "Use base API instead of the default API",
+      "type": "checkbox",
+      "title": "Use Base API",
+      "default": false,
+      "required": false      
+    },
+    {
+      "name": "baseAPI",
+      "label": "Base API Endpoint",
+      "description": "Enter your personal Open AI API Endpoint",
+      "type": "textfield",
+      "title": "Base API Endpoint",
+      "default": "https://api.f2gpt.com/v1",      
+      "required": false
     },
     {
       "name": "isAutoLoad",
